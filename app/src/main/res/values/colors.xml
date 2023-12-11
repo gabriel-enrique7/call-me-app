@@ -1,10 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
+
+    <!-- Tema Claro -->
+    <color name="white">#FFFFFFFF</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+
+    <!-- Tema Escuro -->
     <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="dark_gray">#2e2e2e</color>
+    <color name="purple_200">#FFBB86FC</color>
+
+    <color name="gary_100">#E1E1E6</color> <!-- title -->
+    <color name="gray_200">#A9A9B2</color> <!-- subtitle -->
+    <color name="gray_600">#323238</color> <!-- border-card -->
+    <color name="gray_800">#202024</color> <!-- background-card -->
+    <color name="gray_900">#121214</color> <!-- backgroud -->
+    <color name="ignite_500">#00875F</color> <!-- buttons -->
+
 </resources>
