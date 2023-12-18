@@ -54,16 +54,16 @@ class CadastroActivity : AppCompatActivity() {
         titles = arrayOf(
             "Conecte a sua agenda!",
             "Bem vindo ao Call-me",
-            "Bem vindo ao Call-me",
-            "Bem vindo ao Call-me",
+            "Quase lá",
+            "Conecte a sua agenda!",
         )
 
         //inicializa os subtitlos
         subtitles = arrayOf(
             "Precisamos de algumas informações para criar seu perfil. Ah, você pode editar essas informaões depois.",
             "Conecte o seu calendário para verificar automaticamente as horas ocupadas e os novos eventos a medida em que são agendados.",
-            "Conecte o seu calendário para verificar automaticamente as horas ocupadas e os novos eventos a medida em que são agendados.",
-            "Conecte o seu calendário para verificar automaticamente as horas ocupadas e os novos eventos a medida em que são agendados.",
+            "Defina o intervalo de horário que você está disponível em cada dia da semana.",
+            "Precisamo de algumas informações para criar o seu perfil. Ah, você pode editar essas informações depois.",
         )
 
         //Inicializa step indicadores (circulos e setas)

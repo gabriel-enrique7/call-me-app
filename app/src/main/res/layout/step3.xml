@@ -5,13 +5,466 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="CADASTRO STEP 3"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardBackgroundColor="@color/gray_600"
+        app:contentPadding="2dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray_600"
+            android:orientation="vertical">
+
+            <!-- DOMINGO -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray_800"
+                android:padding="10dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/gary_100"
+                    android:textSize="18sp"
+                    android:layout_gravity="center_vertical"
+                    android:text="Domingo" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="8dp"
+                    app:cardCornerRadius="5dp">
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/gray_900"
+                        android:inputType="text"
+                        android:drawableEnd="@drawable/ic_time"
+                        android:drawablePadding="10dp"
+                        android:padding="15dp"
+                        android:text="08:00"
+                        android:textColor="@color/gray_200" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:cardCornerRadius="5dp">
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/gray_900"
+                        android:drawableEnd="@drawable/ic_time"
+                        android:drawablePadding="10dp"
+                        android:inputType="text"
+                        android:padding="15dp"
+                        android:text="18:00"
+                        android:textColor="@color/gray_200" />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <!-- SEGUNDA -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray_800"
+                android:layout_marginTop="2dp"
+                android:padding="10dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/gary_100"
+                    android:textSize="18sp"
+                    android:layout_gravity="center_vertical"
+                    android:text="Segunda-feira" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="8dp"
+                    app:cardCornerRadius="5dp">
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/gray_900"
+                        android:inputType="text"
+                        android:drawableEnd="@drawable/ic_time"
+                        android:drawablePadding="10dp"
+                        android:padding="15dp"
+                        android:text="08:00"
+                        android:textColor="@color/gray_200" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:cardCornerRadius="5dp">
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/gray_900"
+                        android:drawableEnd="@drawable/ic_time"
+                        android:drawablePadding="10dp"
+                        android:inputType="text"
+                        android:padding="15dp"
+                        android:text="18:00"
+                        android:textColor="@color/gray_200" />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <!-- TERÇA -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray_800"
+                android:layout_marginTop="2dp"
+                android:padding="10dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/gary_100"
+                    android:textSize="18sp"
+                    android:layout_gravity="center_vertical"
+                    android:text="Terça-feira" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="8dp"
+                    app:cardCornerRadius="5dp">
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/gray_900"
+                        android:inputType="text"
+                        android:drawableEnd="@drawable/ic_time"
+                        android:drawablePadding="10dp"
+                        android:padding="15dp"
+                        android:text="08:00"
+                        android:textColor="@color/gray_200" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:cardCornerRadius="5dp">
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/gray_900"
+                        android:drawableEnd="@drawable/ic_time"
+                        android:drawablePadding="10dp"
+                        android:inputType="text"
+                        android:padding="15dp"
+                        android:text="18:00"
+                        android:textColor="@color/gray_200" />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <!-- QUARTA -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray_800"
+                android:layout_marginTop="2dp"
+                android:padding="10dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/gary_100"
+                    android:textSize="18sp"
+                    android:layout_gravity="center_vertical"
+                    android:text="Quarta-feira" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="8dp"
+                    app:cardCornerRadius="5dp">
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/gray_900"
+                        android:inputType="text"
+                        android:drawableEnd="@drawable/ic_time"
+                        android:drawablePadding="10dp"
+                        android:padding="15dp"
+                        android:text="08:00"
+                        android:textColor="@color/gray_200" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:cardCornerRadius="5dp">
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/gray_900"
+                        android:drawableEnd="@drawable/ic_time"
+                        android:drawablePadding="10dp"
+                        android:inputType="text"
+                        android:padding="15dp"
+                        android:text="18:00"
+                        android:textColor="@color/gray_200" />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <!-- QUINTA -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray_800"
+                android:layout_marginTop="2dp"
+                android:padding="10dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/gary_100"
+                    android:textSize="18sp"
+                    android:layout_gravity="center_vertical"
+                    android:text="Quinta-feira" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="8dp"
+                    app:cardCornerRadius="5dp">
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/gray_900"
+                        android:inputType="text"
+                        android:drawableEnd="@drawable/ic_time"
+                        android:drawablePadding="10dp"
+                        android:padding="15dp"
+                        android:text="08:00"
+                        android:textColor="@color/gray_200" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:cardCornerRadius="5dp">
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/gray_900"
+                        android:drawableEnd="@drawable/ic_time"
+                        android:drawablePadding="10dp"
+                        android:inputType="text"
+                        android:padding="15dp"
+                        android:text="18:00"
+                        android:textColor="@color/gray_200" />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <!-- SEXTA -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray_800"
+                android:layout_marginTop="2dp"
+                android:padding="10dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/gary_100"
+                    android:textSize="18sp"
+                    android:layout_gravity="center_vertical"
+                    android:text="Sexta-feira" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="8dp"
+                    app:cardCornerRadius="5dp">
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/gray_900"
+                        android:inputType="text"
+                        android:drawableEnd="@drawable/ic_time"
+                        android:drawablePadding="10dp"
+                        android:padding="15dp"
+                        android:text="08:00"
+                        android:textColor="@color/gray_200" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:cardCornerRadius="5dp">
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/gray_900"
+                        android:drawableEnd="@drawable/ic_time"
+                        android:drawablePadding="10dp"
+                        android:inputType="text"
+                        android:padding="15dp"
+                        android:text="18:00"
+                        android:textColor="@color/gray_200" />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <!-- SÁBADO -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray_800"
+                android:layout_marginTop="2dp"
+                android:padding="10dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/gary_100"
+                    android:textSize="18sp"
+                    android:layout_gravity="center_vertical"
+                    android:text="Sábado" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="8dp"
+                    app:cardCornerRadius="5dp">
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/gray_900"
+                        android:inputType="text"
+                        android:drawableEnd="@drawable/ic_time"
+                        android:drawablePadding="10dp"
+                        android:padding="15dp"
+                        android:text="08:00"
+                        android:textColor="@color/gray_200" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:cardCornerRadius="5dp">
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/gray_900"
+                        android:drawableEnd="@drawable/ic_time"
+                        android:drawablePadding="10dp"
+                        android:inputType="text"
+                        android:padding="15dp"
+                        android:text="18:00"
+                        android:textColor="@color/gray_200" />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
