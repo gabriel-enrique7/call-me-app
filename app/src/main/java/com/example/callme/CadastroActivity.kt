@@ -17,12 +17,18 @@ class CadastroActivity : AppCompatActivity() {
 
     var conteinerLayout : LinearLayout? = null
     var stepIndicatorsLayout : LinearLayout? = null
-    var previousButton : Button? = null
+//    var previousButton : Button? = null
     var nextButton : Button? = null
+    var tvTitle : TextView? = null
+    var tvSubtitle : TextView? = null
+    var tvPassos : TextView? = null
 
     var steps : Array<View> = arrayOf()
     var currentStep : Int = 0
-    var stepIndicators : Array<TextView> = arrayOf()
+//    var stepIndicators : Array<TextView> = arrayOf()
+    var stepIndicators : Array<View> = arrayOf()
+    var titles : Array<String> = arrayOf()
+    var subtitles : Array<String> = arrayOf()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,14 +36,34 @@ class CadastroActivity : AppCompatActivity() {
 
         conteinerLayout = findViewById<LinearLayout>(R.id.container_layout)
         stepIndicatorsLayout = findViewById<LinearLayout>(R.id.step_indicators_layout)
-        previousButton = findViewById<Button>(R.id.previous_button)
+//        previousButton = findViewById<Button>(R.id.previous_button)
         nextButton = findViewById<Button>(R.id.next_button)
+        tvTitle = findViewById(R.id.title)
+        tvSubtitle = findViewById(R.id.subtitle)
+        tvPassos = findViewById(R.id.tvPassos)
 
         //Inicializa os steps (views)
         steps = arrayOf(
             LayoutInflater.from(this).inflate(R.layout.step1, conteinerLayout, false),
             LayoutInflater.from(this).inflate(R.layout.step2, conteinerLayout, false),
             LayoutInflater.from(this).inflate(R.layout.step3, conteinerLayout, false),
+            LayoutInflater.from(this).inflate(R.layout.step4, conteinerLayout, false),
+        )
+
+        //Inicializa os titulos
+        titles = arrayOf(
+            "Conecte a sua agenda!",
+            "Bem vindo ao Call-me",
+            "Bem vindo ao Call-me",
+            "Bem vindo ao Call-me",
+        )
+
+        //inicializa os subtitlos
+        subtitles = arrayOf(
+            "Precisamos de algumas informações para criar seu perfil. Ah, você pode editar essas informaões depois.",
+            "Conecte o seu calendário para verificar automaticamente as horas ocupadas e os novos eventos a medida em que são agendados.",
+            "Conecte o seu calendário para verificar automaticamente as horas ocupadas e os novos eventos a medida em que são agendados.",
+            "Conecte o seu calendário para verificar automaticamente as horas ocupadas e os novos eventos a medida em que são agendados.",
         )
 
         //Inicializa step indicadores (circulos e setas)
@@ -46,12 +72,12 @@ class CadastroActivity : AppCompatActivity() {
         showCurrentStep()
 
         //Click para voltar
-        previousButton?.setOnClickListener(View.OnClickListener {
+        /*previousButton?.setOnClickListener(View.OnClickListener {
             if(currentStep > 0) {
                 currentStep--
                 showCurrentStep()
             }
-        })
+        })*/
 
         //Click para o proximo
         nextButton?.setOnClickListener(View.OnClickListener {
@@ -64,7 +90,7 @@ class CadastroActivity : AppCompatActivity() {
             }
         })
     }
-    fun initializeStepIndicators() {
+    /*fun initializeStepIndicators() {
         stepIndicators = Array(steps.size) { TextView(this) }
         for (i in 0 until steps.size) {
             val stepIndicator = TextView(this)
@@ -86,6 +112,24 @@ class CadastroActivity : AppCompatActivity() {
                 addArrowIndicator(stepIndicatorsLayout!!);
             }
         }
+    }*/
+
+    fun initializeStepIndicators() {
+        stepIndicators = Array(steps.size) { View(this) }
+        for (i in 0 until steps.size) {
+            val stepView = View(this)
+            stepView.setBackgroundResource(R.color.gray_600)
+            val params: LinearLayout.LayoutParams = LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.WRAP_CONTENT,
+                LinearLayout.LayoutParams.WRAP_CONTENT
+            )
+            params.setMargins(10, 0, 10, 0)
+            params.weight = 1F
+            params.height = 5
+            stepView.layoutParams = params
+            stepIndicatorsLayout?.addView(stepView)
+            stepIndicators[i] = stepView
+        }
     }
 
     //Adiciona seta indicadora entre os steps indicadores
@@ -104,17 +148,20 @@ class CadastroActivity : AppCompatActivity() {
 
     //Mostra o step correto
     fun showCurrentStep() {
-        var visibility : Int = View.INVISIBLE
-        var textButtonNext : String = "Submit"
+//        var visibility : Int = View.INVISIBLE
+        var textButtonNext : String = "Finalizar"
 
         conteinerLayout?.removeAllViews()
         conteinerLayout?.addView(steps[currentStep])
 
-        if(currentStep > 0) visibility = View.VISIBLE
-        if(currentStep < steps.size - 1) textButtonNext = "Next"
+//        if(currentStep > 0) visibility = View.VISIBLE
+        if(currentStep < steps.size - 1) textButtonNext = "Próximo passo"
 
-        previousButton?.visibility = visibility
+//        previousButton?.visibility = visibility
         nextButton?.text = textButtonNext
+        tvTitle?.text = titles[currentStep]
+        tvSubtitle?.text = subtitles[currentStep]
+        tvPassos?.text = "Passo " + (currentStep + 1) + " de " + steps.size
 
         updateStepIndicators();
     }
@@ -123,14 +170,14 @@ class CadastroActivity : AppCompatActivity() {
     fun updateStepIndicators() {
         for(i in 0 until stepIndicators.size) {
             if(i == currentStep) {
-                stepIndicators[i].setBackgroundResource(R.drawable.circle_green)
+                stepIndicators[i].setBackgroundResource(R.color.ignite_500)
             } else {
-                stepIndicators[i].setBackgroundResource(R.drawable.circle_gray)
+                stepIndicators[i].setBackgroundResource(R.color.gray_600)
             }
         }
     }
 
     fun submitForm() {
-        Toast.makeText(this, "CHUPAR A PIRIQUITA DA MARACUTCHA!", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "CADASTRO DE USUARIO!", Toast.LENGTH_SHORT).show()
     }
 }
