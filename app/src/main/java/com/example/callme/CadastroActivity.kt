@@ -1,5 +1,6 @@
 package com.example.callme
 
+import android.content.Intent
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -71,14 +72,6 @@ class CadastroActivity : AppCompatActivity() {
 
         showCurrentStep()
 
-        //Click para voltar
-        /*previousButton?.setOnClickListener(View.OnClickListener {
-            if(currentStep > 0) {
-                currentStep--
-                showCurrentStep()
-            }
-        })*/
-
         //Click para o proximo
         nextButton?.setOnClickListener(View.OnClickListener {
             if(currentStep < steps.size - 1) {
@@ -90,29 +83,6 @@ class CadastroActivity : AppCompatActivity() {
             }
         })
     }
-    /*fun initializeStepIndicators() {
-        stepIndicators = Array(steps.size) { TextView(this) }
-        for (i in 0 until steps.size) {
-            val stepIndicator = TextView(this)
-            stepIndicator.text = (i + 1).toString()
-            stepIndicator.setTextColor(Color.WHITE)
-            stepIndicator.textSize = 18F
-            stepIndicator.setBackgroundResource(R.drawable.circle_gray)
-            stepIndicator.gravity = Gravity.CENTER
-            val params : LinearLayout.LayoutParams = LinearLayout.LayoutParams(
-                LinearLayout.LayoutParams.WRAP_CONTENT,
-                LinearLayout.LayoutParams.WRAP_CONTENT
-            )
-            params.setMargins(10,0,10,0)
-            stepIndicator.layoutParams = params
-            stepIndicatorsLayout?.addView(stepIndicator)
-            stepIndicators[i] = stepIndicator
-
-            if(i < steps.size - 1){
-                addArrowIndicator(stepIndicatorsLayout!!);
-            }
-        }
-    }*/
 
     fun initializeStepIndicators() {
         stepIndicators = Array(steps.size) { View(this) }
@@ -179,5 +149,8 @@ class CadastroActivity : AppCompatActivity() {
 
     fun submitForm() {
         Toast.makeText(this, "CADASTRO DE USUARIO!", Toast.LENGTH_SHORT).show()
+
+        val intent = Intent(this, CalendarActivity::class.java)
+        startActivity(intent)
     }
 }
