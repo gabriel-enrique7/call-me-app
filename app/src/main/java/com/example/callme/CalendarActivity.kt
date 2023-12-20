@@ -1,5 +1,6 @@
 package com.example.callme
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -82,10 +83,8 @@ class CalendarActivity : AppCompatActivity(), CalendarAdapter.OnItemListener {
     }
 
     override fun onItemClick(position: Int, dayText: String) {
-        if (dayText.equals("")) {
-            val message = "Selected Date " + dayText + " " + monthYearFromDate(selectedDate)
-            Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
-        }
+        val intent = Intent(this, TimesActivity::class.java)
+        startActivity(intent)
     }
 
     fun previusMonthAction() {

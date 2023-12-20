@@ -33,7 +33,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:textColor="@color/gary_100"
+                    android:textColor="@color/gray_100"
                     android:textSize="18sp"
                     android:layout_gravity="center_vertical"
                     android:text="Domingo" />
@@ -96,7 +96,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:textColor="@color/gary_100"
+                    android:textColor="@color/gray_100"
                     android:textSize="18sp"
                     android:layout_gravity="center_vertical"
                     android:text="Segunda-feira" />
@@ -159,7 +159,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:textColor="@color/gary_100"
+                    android:textColor="@color/gray_100"
                     android:textSize="18sp"
                     android:layout_gravity="center_vertical"
                     android:text="Terça-feira" />
@@ -222,7 +222,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:textColor="@color/gary_100"
+                    android:textColor="@color/gray_100"
                     android:textSize="18sp"
                     android:layout_gravity="center_vertical"
                     android:text="Quarta-feira" />
@@ -285,7 +285,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:textColor="@color/gary_100"
+                    android:textColor="@color/gray_100"
                     android:textSize="18sp"
                     android:layout_gravity="center_vertical"
                     android:text="Quinta-feira" />
@@ -348,7 +348,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:textColor="@color/gary_100"
+                    android:textColor="@color/gray_100"
                     android:textSize="18sp"
                     android:layout_gravity="center_vertical"
                     android:text="Sexta-feira" />
@@ -411,7 +411,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:textColor="@color/gary_100"
+                    android:textColor="@color/gray_100"
                     android:textSize="18sp"
                     android:layout_gravity="center_vertical"
                     android:text="Sábado" />

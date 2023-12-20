@@ -2,4 +2,6 @@
     <string name="app_name">Call me</string>
     <string name="back"><![CDATA[<-]]></string>
     <string name="next"><![CDATA[->]]></string>
+    <string name="exeplo_dia_mes"> 20 de setembro</string>
+    <string name="exemplo_dia_semana">Terça-feira,</string>
 </resources>

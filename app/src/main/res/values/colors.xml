@@ -13,7 +13,7 @@
     <color name="dark_gray">#2e2e2e</color>
     <color name="purple_200">#FFBB86FC</color>
 
-    <color name="gary_100">#E1E1E6</color> <!-- title -->
+    <color name="gray_100">#E1E1E6</color> <!-- title -->
     <color name="gray_200">#A9A9B2</color> <!-- subtitle -->
     <color name="gray_600">#323238</color> <!-- border-card -->
     <color name="gray_800">#202024</color> <!-- background-card -->

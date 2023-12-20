@@ -148,7 +148,7 @@ class CadastroActivity : AppCompatActivity() {
     }
 
     fun submitForm() {
-        Toast.makeText(this, "CADASTRO DE USUARIO!", Toast.LENGTH_SHORT).show()
+        //Toast.makeText(this, "CADASTRO DE USUARIO!", Toast.LENGTH_SHORT).show()
 
         val intent = Intent(this, CalendarActivity::class.java)
         startActivity(intent)
